@@ -7,21 +7,15 @@
 //
 
 import Cocoa
+import TestFramework
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let testFrameworkSwift = TestsFrameworkSwift()
+        print(testFrameworkSwift.fromTestFrameworkSwift())
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
-
 }
 
